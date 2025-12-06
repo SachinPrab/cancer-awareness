@@ -32,9 +32,95 @@
 
     header h1 {
       font-size: 2.5rem;
-      max-width: 800px;
+      max-width: 600px;
       text-shadow: 2px 2px 8px rgba(0,0,0,0.4);
     }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 40px auto;
+    }
+
+    .contact-box {
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      resize: none;
+    }
+
+    button {
+      background: #ff4081;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e0356e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      background: #f5f5f5;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 600px){
+      header h1 {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Landing Section -->
+  <header>
+    <h1>Join Us in the Fight Against Cancer — Awareness, Support & Hope</h1>
+  </header>
+
+  <!-- Contact Form -->
+  <section class="container">
+    <h2>Contact Us</h2>
+    <p>If you have questions, need support, or want to volunteer — send a message.</p>
+
+    <div class="contact-box">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <textarea rows="5" placeholder="Your Message..." required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Cancer Awareness & Support | Together We Are Strong
+  </footer>
+
+</body>
+</html>    }
 
     .container {
       width: 90%;
